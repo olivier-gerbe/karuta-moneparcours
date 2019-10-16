@@ -2,10 +2,10 @@
 var application_version = "2.0";
 var application_date = "2017-10-30";
 //----------------------------------
-var appliname = 'CNAM-TEST';
+var appliname = 'moneparcours';
 var karutaname = appliname;
 var karuta_url = '../../../' + karutaname;
-var bckname = '-cnam-test';
+var bckname = '-cnam';
 var serverBCK = "../../../karuta-backend"+bckname; // fileserver backend
 var serverBCK_API = "../../../karuta-backend"+bckname+"/rest/api";
 var cas_url = "";
@@ -120,26 +120,6 @@ var elgg_refreshing = 240000; // 240 seconds
 var bubble_installed = true;
 //------ EUROPASS -------------------------------------
 var europass_installed = true;
-//------ EXEC BATCH AT USER CREATION ------------------
-var g_execbatch = true;
-var g_execbatchbuttonlabel1 = [];
-	g_execbatchbuttonlabel1['fr'] = "Patience! Création de votre portfolio ...";
-var g_json = {};
-//=======================
-function prepareBatch()
-//=======================
-{
-	g_json['model_code'] = "modeles-cnam.batch-creation";
-	g_json['cohorteCode'] = "testog";
-	g_json['cohorteLibelle'] = "Testog";
-	g_json['lines'] = [];
-	g_json.lines[0] =
-	{
-		"auditeurCourriel" : USER.email,
-		"auditeurNomFamille" : USER.lastname,
-		"auditeurPrenom" : USER.firstname,
-	};
-}//----------------------------------------------------
 
 var karutaStr = new Array();
 /*
