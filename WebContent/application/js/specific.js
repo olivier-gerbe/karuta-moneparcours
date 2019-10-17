@@ -10,8 +10,6 @@ function prepareBatch()
 //=======================
 {
 	g_json['model_code'] = "modeles-cnam.batch-creation";
-	g_json['cohorteCode'] = "testog";
-	g_json['cohorteLibelle'] = "Testog";
 	g_json['lines'] = [];
 	g_json.lines[0] =
 	{
