@@ -9,7 +9,9 @@ var g_json = {};
 function prepareBatch()
 //=======================
 {
+	// ---- global variables ---------
 	g_json['model_code'] = "modeles-cnam.batch-creation";
+	// ---- local variables ---------
 	g_json['lines'] = [];
 	g_json.lines[0] =
 	{
