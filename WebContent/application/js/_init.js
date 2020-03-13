@@ -1,6 +1,6 @@
 //----------------------------------
 var application_version = "2.0";
-var application_date = "2017-10-30";
+var application_date = "2020-03-11";
 //----------------------------------
 var appliname = 'moneparcours';
 var karutaname = appliname;
